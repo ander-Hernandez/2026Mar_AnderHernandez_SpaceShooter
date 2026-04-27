@@ -30,6 +30,20 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private float currentDifficulty = 0f;
 
 
+    [Header("Red Portal Settings")]
+    [SerializeField] private PortalBehaviour redPortalOne;
+    [SerializeField] private PortalBehaviour redPortalTwo;
+    [SerializeField] private float redPortalCooldown;
+    [SerializeField] private float redPortalCooldownDecrease;
+    [SerializeField] private float redPortalMinCooldown;
+
+    [Header("Blue Portal Settings")]
+    [SerializeField] private PortalBehaviour bluePortalOne;
+    [SerializeField] private PortalBehaviour bluePortalTwo;
+    [SerializeField] private float bluePortalCooldown;
+    [SerializeField] private float bluePortalCooldownDecrease;
+    [SerializeField] private float bluePortalMinCooldown;
+
     private void Start()
     {
         AudioManager.StopMusic();
@@ -37,6 +51,7 @@ public class WaveManager : MonoBehaviour
         enemySpawner.InitializeSpawnerWithCustomSettings(enemyCooldown, true);
         obstacleSpawner.InitializeSpawnerWithCustomSettings(obstacleCooldown, true);
         powerUpSpawner.InitializeSpawnerWithCustomSettings(powerUpCooldown, true);
+
         currentDifficulty = 0;
         UpdateDisplayText();
         
@@ -63,7 +78,8 @@ public class WaveManager : MonoBehaviour
         enemySpawner.InitializeSpawnerWithCustomSettings(enemyCooldown, true);
         obstacleSpawner.InitializeSpawnerWithCustomSettings(obstacleCooldown, true);
         powerUpSpawner.InitializeSpawnerWithCustomSettings(powerUpCooldown, true);
-
+        redPortalOne.SetMovingCooldown(Mathf.Max(redPortalMinCooldown, redPortalCooldown - redPortalCooldownDecrease));
+        bluePortalOne.SetMovingCooldown(Mathf.Max(bluePortalMinCooldown, bluePortalCooldown - bluePortalCooldownDecrease));
     }
     public void UpdateDisplayText()
     {

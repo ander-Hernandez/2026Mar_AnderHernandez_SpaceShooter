@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6456451903665544177}
   - component: {fileID: 7051647389863070377}
   - component: {fileID: -6152218086112412280}
+  - component: {fileID: -1342258997389135847}
   - component: {fileID: 8789739791259484938}
   - component: {fileID: 736309249170285353}
-  - component: {fileID: -1342258997389135847}
   m_Layer: 7
   m_Name: WhipEnemy
   m_TagString: Untagged
@@ -66,13 +66,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d7389ace614634e954b3912063f0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealthController
-  maxHealth: 2
+  maxHealth: 1
   deadEffect: {fileID: 2354380063184945574, guid: b025a8c3f493b5742a096001dee46516, type: 3}
   pointManager: {fileID: 0}
   pointsOnDead: 50
   pointPrefab: {fileID: 1764525231786897274, guid: fb6073d15463d3545892e75aaf913bb6, type: 3}
   animator: {fileID: 0}
   damageTag: Damaged
+--- !u!114 &-1342258997389135847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065014641931379048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558642679e1856d46bae6660c4c60217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WipEnemyMovementController
+  movementSpeed: 10
+  leftLimitCoordinate: -6
+  rightScreenLimit: 15
+  spriteRenderer: {fileID: 1805575674724348972}
 --- !u!50 &8789739791259484938
 Rigidbody2D:
   serializedVersion: 5
@@ -146,22 +162,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7067815, y: 0.648621}
   m_EdgeRadius: 0
---- !u!114 &-1342258997389135847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065014641931379048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558642679e1856d46bae6660c4c60217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WipEnemyMovementController
-  movementSpeed: 10
-  leftLimitCoordinate: -6
-  rightScreenLimit: 15
-  spriteRenderer: {fileID: 1805575674724348972}
 --- !u!1001 &3124324678180857032
 PrefabInstance:
   m_ObjectHideFlags: 0

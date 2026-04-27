@@ -64,6 +64,8 @@ public class AsteroidBehaviour : MonoBehaviour, IDamageable, IDie, IPointGiver
             {
                 instance = Instantiate(spawnOnDestroyPrefab, transform.position, transform.rotation);
                 instance.GetComponent<AsteroidBehaviour>().InitializeAsteroid(manager);
+                if(pointPrefab != null)
+                Destroy(Instantiate(pointPrefab, transform.position, Quaternion.identity), 1.2f);
             }
 
         }

@@ -115,7 +115,7 @@ MonoBehaviour:
   movementYVector: {x: -3, y: 3}
   movementXVector: {x: -5, y: -3}
   _rb2d: {fileID: 1166903945020390615}
-  maxHp: 3
+  maxHp: 2
   spawnOnDestroyPrefab: {fileID: 451161831473809029, guid: 50ee2fc96d973374f982386ce2d69dce, type: 3}
   numberOfSpawns: 3
   damageLayer:
@@ -123,8 +123,8 @@ MonoBehaviour:
     m_Bits: 384
   destroyEffect: {fileID: 0}
   manager: {fileID: 0}
-  pointsOnDestroy: 0
-  pointPrefab: {fileID: 0}
+  pointsOnDestroy: 50
+  pointPrefab: {fileID: 1764525231786897274, guid: fb6073d15463d3545892e75aaf913bb6, type: 3}
 --- !u!1 &7783344694892039012
 GameObject:
   m_ObjectHideFlags: 0

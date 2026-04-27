@@ -123,8 +123,8 @@ MonoBehaviour:
     m_Bits: 384
   destroyEffect: {fileID: 9153580937403808794, guid: d7ba6690a5a21a94c8884d5331b6222f, type: 3}
   manager: {fileID: 0}
-  pointsOnDestroy: 10
-  pointPrefab: {fileID: 1764525231786897274, guid: c8a02b9de8e78754992a115e11a02960, type: 3}
+  pointsOnDestroy: 50
+  pointPrefab: {fileID: 1764525231786897274, guid: fb6073d15463d3545892e75aaf913bb6, type: 3}
 --- !u!1 &5049158229847297163
 GameObject:
   m_ObjectHideFlags: 0

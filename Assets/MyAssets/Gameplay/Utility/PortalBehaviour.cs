@@ -29,13 +29,37 @@ public class PortalBehaviour : MonoBehaviour
             return;
 
 
-        player.position = otherPortal.transform.position;
+        Vector2 offset = player.position - transform.position;
+
+        player.position = new Vector2(
+            otherPortal.transform.position.x,
+            otherPortal.transform.position.y - offset.y
+        );
 
         canTeleport = false;
         otherPortal.canTeleport = false;
 
         Invoke(nameof(ResetTeleport), teleportCooldown);
         otherPortal.Invoke(nameof(ResetTeleport), teleportCooldown);
+    } 
+    private void MoveTeleport()
+    {
+        Vector2 position = new Vector2(
+                Random.Range(teleportMovingXLimits.x, teleportMovingXLimits.y),
+                Random.Range(teleportMovingYLimits.x, teleportMovingYLimits.y)
+            );
+
+        if (Vector2.Distance(position, otherPortal.transform.position) < minDistanceBetweenPortals)
+        {
+            position = new Vector2(
+                Random.Range(teleportMovingXLimits.x, teleportMovingXLimits.y),
+                Random.Range(teleportMovingYLimits.x, teleportMovingYLimits.y)
+            );
+        }
+            
+        _animator.SetTrigger("RestartPortal");
+        transform.position = position;
+
     }
     private void Update()
     {
@@ -64,18 +88,8 @@ public class PortalBehaviour : MonoBehaviour
         }
     }
 
-
-    private void MoveTeleport()
-    {
-        Vector2 position = new Vector2(
-                Random.Range(teleportMovingXLimits.x, teleportMovingXLimits.y),
-                Random.Range(teleportMovingYLimits.x, teleportMovingYLimits.y)
-            );
-
-        if (Vector2.Distance(position, otherPortal.transform.position) < minDistanceBetweenPortals)
-            MoveTeleport();
-        _animator.SetTrigger("RestartPortal");
-        transform.position = position;
-
+    public void SetMovingCooldown(float newCooldown) { 
+        timeToSwitchPlaces = newCooldown;
     }
+   
 }

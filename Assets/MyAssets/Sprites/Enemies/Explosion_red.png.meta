@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 74ad13813b30259448d55877c55fb395
+guid: 34668fee56ddb61449a8d1b62e83acd0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8894201953851282084
-    second: Buttons_0
+      213: 7486307750266775322
+    second: Explosion_red_0
   - first:
-      213: 7664807735657788756
-    second: Buttons_1
+      213: 1853297974914843288
+    second: Explosion_red_1
   - first:
-      213: -5402412272178277761
-    second: Buttons_2
+      213: -8388106327680333582
+    second: Explosion_red_2
+  - first:
+      213: -7640015819661293052
+    second: Explosion_red_3
+  - first:
+      213: 507587179806327581
+    second: Explosion_red_4
+  - first:
+      213: 7416757361342420358
+    second: Explosion_red_5
+  - first:
+      213: -6820557531614207618
+    second: Explosion_red_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -106,89 +118,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Buttons_0
+      name: Explosion_red_0
       rect:
         serializedVersion: 2
-        x: 255
-        y: 183
-        width: 130
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a214e3bd8d8e6b70800000000000000
-      internalID: 8894201953851282084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buttons_1
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 135
-        width: 130
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4557c83960ede5a60800000000000000
-      internalID: 7664807735657788756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buttons_2
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 87
-        width: 130
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f725a9269a6c605b0800000000000000
-      internalID: -5402412272178277761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Buttons_3
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 109
-        width: 102
-        height: 94
+        x: 11
+        y: 76
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f0e213ce9cb582844b590b9955d43f70
-      internalID: -1122899349
+      spriteID: a17a7e51c35b4e760800000000000000
+      internalID: 7486307750266775322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_red_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 75
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89200c160bc38b910800000000000000
+      internalID: 1853297974914843288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_red_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 73
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f84860bcb5779b80800000000000000
+      internalID: -8388106327680333582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_red_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a49be271639f590800000000000000
+      internalID: -7640015819661293052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_red_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 4
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1306e8c9df4b0700800000000000000
+      internalID: 507587179806327581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_red_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6851414468d9de660800000000000000
+      internalID: 7416757361342420358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_red_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 36
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e712506df038851a0800000000000000
+      internalID: -6820557531614207618
       vertices: []
       indices: 
       edges: []
@@ -197,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e7a4686b4cdc20a43aa82e467299e6cb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -207,10 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Buttons_0: 8894201953851282084
-      Buttons_1: 7664807735657788756
-      Buttons_2: -5402412272178277761
-      Buttons_3: -1122899349
+      Explosion_red_0: 7486307750266775322
+      Explosion_red_1: 1853297974914843288
+      Explosion_red_2: -8388106327680333582
+      Explosion_red_3: -7640015819661293052
+      Explosion_red_4: 507587179806327581
+      Explosion_red_5: 7416757361342420358
+      Explosion_red_6: -6820557531614207618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameMenuManager : MonoBehaviour
 {
-
-
+    [SerializeField] private GameObject ControlUI;
     private void Start()
     {
         AudioManager.PlayMenuMusic();
@@ -17,5 +17,10 @@ public class GameMenuManager : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ToggleControls()
+    {
+        ControlUI.SetActive(!ControlUI.activeInHierarchy);
     }
 }

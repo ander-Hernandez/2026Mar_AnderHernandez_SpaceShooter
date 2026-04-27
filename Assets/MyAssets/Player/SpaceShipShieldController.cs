@@ -5,6 +5,7 @@ public class SpaceShipShieldController : MonoBehaviour
 {
     [SerializeField] private GameObject shield;
     [SerializeField] public bool isShielded;
+    private Coroutine shieldCoroutine;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,10 +14,17 @@ public class SpaceShipShieldController : MonoBehaviour
 
     public void EnableShield(float timeToDisable)
     {
-        StartCoroutine(EnableShieldCoroutine(timeToDisable));
+        if (shieldCoroutine != null)
+        {
+            StopCoroutine(shieldCoroutine);
+        }
+
+        shieldCoroutine = StartCoroutine(
+            EnableShieldCoroutine(timeToDisable)
+        );
 
     }
-
+    
     private IEnumerator EnableShieldCoroutine(float timeToDisable)
     {
         shield.SetActive(true);

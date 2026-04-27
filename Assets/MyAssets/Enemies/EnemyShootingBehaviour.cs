@@ -9,9 +9,7 @@ public class EnemyShootingBehaviour : BaseEnemyBehaviour, IShootable
     [SerializeField] protected float shootingCooldown;
     protected float shootingCounter;
     [SerializeField] protected Transform muzzleTransform;
-    
-
-    
+   
     private void Update()
     {
         _movementController.UpdateMovement();

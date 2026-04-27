@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Bits: 256
   bulletPrefab: {fileID: 6371749120504863359, guid: 130be31e4a59684449f9a0326d8c35b9, type: 3}
   bulletDamage: 1
-  shootingCooldown: 1
+  shootingCooldown: 1.2
   muzzleTransform: {fileID: 2174909226861488644}
 --- !u!114 &5862044484742736510
 MonoBehaviour:

@@ -11,7 +11,7 @@ public class BulletDestroyerBehaviour : MonoBehaviour
 
         if ((destroyLayers.value & otherLayerMask) != 0)
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.transform.root.gameObject);
         }
     }
 }

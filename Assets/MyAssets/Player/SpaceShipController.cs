@@ -37,6 +37,7 @@ public class SpaceShipController : MonoBehaviour
     private void OnMove(InputAction.CallbackContext context)
     {
         moveVector = move.action.ReadValue<Vector2>();
+        if(_rb2d != null)
         _rb2d.linearVelocity = moveVector * linearSpeed;
         animator.SetFloat("MoveX", moveVector.x);
         animator.SetFloat("MoveY", moveVector.y);
